@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- sample17 フォームに入力した内容を取得する-->
+    <form action="submit.php" method="get">
+        <label for="my_name">お名前：</label>
+        <input type="text" id="my_name" name="my_name" maxlength="225" value="">
+        <input type="submit" value="送信する">
+    </form>
+    <?php print($_REQUEST['my_name']); ?>
+    <?php print($_GET['my_name']); ?>
+</body>
+
+</html>
